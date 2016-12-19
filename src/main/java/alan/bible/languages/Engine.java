@@ -1,4 +1,4 @@
-package me.gates.alan.languages;
+package alan.bible.languages;
 
 import java.io.BufferedReader;
 import java.io.IOException;

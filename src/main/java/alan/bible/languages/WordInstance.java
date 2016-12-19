@@ -1,4 +1,4 @@
-package me.gates.alan.languages;
+package alan.bible.languages;
 
 /**
  * Created by gates on 5/22/15.

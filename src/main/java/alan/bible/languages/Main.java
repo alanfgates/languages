@@ -1,4 +1,4 @@
-package me.gates.alan.languages;
+package alan.bible.languages;
 
 import org.apache.commons.cli.CommandLine;
 import org.apache.commons.cli.GnuParser;

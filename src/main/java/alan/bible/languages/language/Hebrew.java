@@ -1,8 +1,8 @@
-package me.gates.alan.languages.language;
+package alan.bible.languages.language;
 
-import me.gates.alan.languages.Language;
-import me.gates.alan.languages.Word;
-import me.gates.alan.languages.WordSet;
+import alan.bible.languages.Language;
+import alan.bible.languages.Word;
+import alan.bible.languages.WordSet;
 
 import java.util.ArrayList;
 import java.util.List;
