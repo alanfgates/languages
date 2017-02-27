@@ -12,8 +12,8 @@ import java.util.Set;
 public class SpreadsheetDumper {
 
   final private static int OCCURRENCE_SIZING_FACTOR = 10; // How we size down the word occurrence
-  final private static int MAX_OCCURRENCE_VERB = 10; // maximum number of times to put a verb in the list
-  final private static int MAX_OCCURRENCE_WORD = 25; // maximum number of times to put a word in the list
+  final private static int MAX_OCCURRENCE_VERB = 8; // maximum number of times to put a verb in the list
+  final private static int MAX_OCCURRENCE_WORD = 20; // maximum number of times to put a word in the list
 
   /**
    * Dump the words into a spreadsheet
@@ -37,7 +37,7 @@ public class SpreadsheetDumper {
     Random rand = new Random();
     int filenum = 1;
     while (!lines.isEmpty()) {
-      File file = new File(dirname + System.getProperty("file.separator") + "spreadsheet" +
+      File file = new File(dirname + System.getProperty("file.separator") + "Language " +
           filenum++ + ".csv");
       try (FileWriter writer = new FileWriter(file)) {
         Set<String> beenThereDoneThat = new HashSet<>(fileSize);
@@ -59,7 +59,7 @@ private void dumpOneWordSet(WordSet words, int maxWordOccurrence, List<String> l
       timesToWrite = Math.min(maxWordOccurrence, timesToWrite);  // there's a limit
       for (int i = 0; i < timesToWrite; i++) {
         for (WordInstance instance : word.getInstances()) {
-          lines.add(instance.first + '|' + instance.second + '\n');
+          lines.add(instance.first + '\t' + instance.second + '\n');
         }
       }
     }

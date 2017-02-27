@@ -50,7 +50,7 @@ class Engine {
     StringBuilder langName = new StringBuilder();
     langName.append(language.toUpperCase().charAt(0));
     langName.append(language.toLowerCase().substring(1));
-    String className = "me.gates.alan.languages.language." + langName.toString();
+    String className = "alan.bible.languages.language." + langName.toString();
     try {
       Class<? extends Language> clz = (Class<? extends Language>)Class.forName(className);
       return clz.newInstance();

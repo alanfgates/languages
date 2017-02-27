@@ -1,0 +1,20 @@
+#!/bin/sh
+
+if [ "x$1" == "x" ]
+  then
+  echo Usage: $0 spreadsheet_dump_directory
+  exit 1
+fi
+
+BASEDIR=$PWD
+DUMPDIR=$BASEDIR/$1
+MVN=$HOME/.m2/repository
+
+CLASSPATH=$BASEDIR/target/languages-1.jar
+for lib in commons-cli/commons-cli/1.2/commons-cli-1.2.jar
+  do
+  CLASSPATH=$CLASSPATH:$MVN/$lib
+done
+
+java -cp $CLASSPATH alan.bible.languages.Main -l Hebrew -l Greek -s $DUMPDIR -z 50
+

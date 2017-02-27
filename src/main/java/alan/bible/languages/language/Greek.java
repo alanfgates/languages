@@ -64,11 +64,11 @@ public class Greek extends Language {
         "βαλούσαις", "throwing-pAt-fDp", "βαλούσας", "throwing-pAt-fAp",
         "βαλόν", "throwing-pAt-nNAs");
     addWord(words, verbDecoder, 1430, "λύομαι", "I loose myself/was loosened-iMPr1n",
-        "λύῃ", "you loose yourself/were loosened-iMPr2n",
+        "λύῃ", "you (might) loose yourself/were (might be) loosened/s/he might be loosening-isMPr2n/sAr3n",
         "λύει", "you loose yourself/were loosened-iMPr2n",
         "λύεται", "he looses himself/was loosened-iMPr3n",
         "λυόμεθα", "we loose ourselves/were loosened-iMPr1l",
-        "λύεσθε", "you loose yourselves/were loosened-iMPr2l",
+        "λύεσθε", "you loose yourselves/were loosened-imMPr2l",
         "λύονται", "they loose themselves/were loosened-iMPr3l");
     addWord(words, verbDecoder, 1275, "ἔλυον", "I was/they were loosening-iAe1n/3l",
         "ἔλυες", "you were loosening-iAe2n", "ἔλυε", "s/he was loosening-iAe3n",
@@ -95,7 +95,8 @@ public class Greek extends Language {
         "λυόμεναις", "loosening oneself/being loosened-pMPr-fDp",
         "λυόμενα", "loosening oneself/being loosened-pMPr-nNAp");
     addWord(words, verbDecoder, 888,
-        "λύσῃς", "you might loosen-sAa2n", "λύσῃ", "s/he might loosen-sAa3n",
+        "λύσῃς", "you might loosen-sAa2n", "λύσῃ", "s/he might loosen/You might loosen " +
+            "yourself-sAa3n/sMa2n",
         "λύσωμεν", "we might loosen-sAa1l", "λύσητε", "you might loosen-sAa2l",
         "λύσωσι", "they might loosen-sAa3l", "βάλω", "I might throw-sAt1n",
         "βάλῃς", "you might throw-sAt2n", "βάλῃ", "s/he might throw-sAt3n",
@@ -105,7 +106,8 @@ public class Greek extends Language {
         "ἐλύσω", "you loosed yourself-iMa2n", "ἐλύσατο", "s/he loosed himself-iMa3n",
         "ἐλυσάμεθα", "we loosed ourselves-iMa1l", "ἐλύσασθε", "you loosed yourselves-iMa2l",
         "ἐλύσαντο", "they loosed themselves-iMa3l");
-    addWord(words, verbDecoder, 740, "λῦσαι", "to loosen-fAa", "βαλεῖν", "to throw-fAt");
+    addWord(words, verbDecoder, 740, "λῦσαι", "to loosen/loosen yourslef!-fAa/mMa2n", "βαλεῖν",
+        "to throw-fAt");
     addWord(words, verbDecoder, 720, "ἐλύθην", "I was loosed-iPa1n",
         "ἐλύθης", "you were loosed-iPa2n", "ἐλύθη", "s/he was loosed-iPa3n",
         "ἐλύθημεν", "We were loosed-iPa1l", "ἐλύθητε", "you were loosed-iPa2l",
@@ -131,7 +133,8 @@ public class Greek extends Language {
         "ἐλύεσθε", "you were loosening yourselves/you were loosened-iMPe2l",
         "ἐλύοντο", "they were loosening themselves/they were loosened-iMPe3l");
     addWord(words, verbDecoder, 370, "λύῃς", "you might be loosening-sAr2n",
-        "λύῃ", "s/he might be loosening-sAr3n", "λύωμεν", "we might be loosening-sAr1l",
+        // 3rd person in indicative middle/passive present
+        "λύωμεν", "we might be loosening-sAr1l",
         "λύητε", "you might be loosening-sAr2l", "λύωσι", "they might be loosening-sAr3l",
         "λύωσιν", "they might be loosening-sAr3l");
     // TODO 370 participle perfect active
@@ -151,6 +154,73 @@ public class Greek extends Language {
         "λυσάμένᾱς",  "loosening oneself-pMa-fAp",
         "λυόμεναις", "loosening oneself-pMa-fDp",
         "λυσάμενα", "loosening oneself-pMa-nNAp");
+
+    // Below here I don't know the estimated occurrence, and the above are estimates only anyway
+    addWord(words, verbDecoder, 200, "λύωμαι", "I might loosen myself/be loosed-sPMr1n",
+        // second person in indicative middle/passive present
+        "λύηται", "S/he might loosen her(him)self/be loosed-sPMr3n",
+        "λυώμεθα", "We might loosen ourselves/be loosed-sPMr1l",
+        "λύησθε", "You might loosen yourselves/be loosed-sPMr2l",
+        "λύωνται", "They might loosen themselves/be loosed-sPMr3l");
+
+    addWord(words, verbDecoder, 200, "λύσωμαι", "I might loosen myself-sMa1n",
+        // second person in subjunctive active aorist
+        "λύσηται", "He/she might loosen him(her)self-sMa3n",
+        "λυσώμεθα", "We might loosen ourselves-sMa1l",
+        "λύσησθε", "You might loosen yourselves-sMa2l",
+        "λύσωνται", "They might loosen themselves-sMa3l",
+        "γένωμαι", "I might become-sMt1n",
+        "γένῃ", "You might become-sMt2n",
+        "γένηται", "S/he might become-sMt3n",
+        "γενώμεθα", "We might become-sMt1l",
+        "γένησθε", "You might become-sMt2l",
+        "γένωνται", "They might become-sMt3l");
+
+    addWord(words, verbDecoder, 200, "λυθῶ", "I might be loosed-sPa1n",
+        "λυθῇς", "You might be loosed-sPa2n",
+        "λυθῇ", "s/he might be loosed-sPa3n",
+        "λυθῶμεν", "We might be loosed-sPa1l",
+        "λυθῆτε", "You might be loosed-sPa2l",
+        "λυθῶσι", "They might be loosed-sPa3l",
+        "λυθῶσιν", "They might be loosed-sPa3l",
+        "γραφῶ", "I might be written-sPt1n",
+        "γραφῆς", "You might be written-sPt2n",
+        "γραφῇ", "s/he might be written-sPt3n",
+        "γραφῶμεν", "We might be written-sPt1l",
+        "γραφῆτε", "You might be written-sPt2l",
+        "γραφῶσι", "They might be written-sPt3l",
+        "γραφῶσιν", "They might be written-sPt3l");
+
+    addWord(words, verbDecoder, 200, "λύου", "loose yourself/be loosed!-mMPr2n",
+        "λυέσθω", "s/he must loose her(him)self/be loosed!-mMPr3n",
+        // second person plural in indicative middle/passive
+        "λυέσθωσαν", "they must loose themselves/be loosed!-mMPr3l");
+
+    addWord(words, verbDecoder, 200, "λυσάσθω", "s/he must loose her(him)self!-mMa3n",
+        "λύσασθε", "loose yourselves!-mMa2l",
+        "λυσάσθωσαν", "they must loose themselves!-mMa3l",
+        "γένου", "become!-mMt2n",
+        "γενέσθω", "s/he must become!-mMt3n",
+        "γένεσθε", "become!-mMt2l",
+        "γενέσθωσαν", "they must become!-mMt3l");
+
+    addWord(words, verbDecoder, 200, "λύθητι", "be loosed!-mMPa2n",
+        "λυθήτω", "s/he must be loosed!-mMPa3n",
+        "λύθητε", "be loosed!-mMPa2l",
+        "λυθήτωσαν", "they must be loosed!-mMPa3l",
+        "γράφητι", "be written!-mMPt2n",
+        "γραφήτω", "s/he must be written!-mMPt3n",
+        "γράφητε", "be written!-mMPt2l",
+        "γραφήτωσαν", "they must be written!-mMPt3l");
+
+    addWord(words, verbDecoder, 200, "λύεσθαι", "to loose oneself/to be loosed-fMPr");
+
+    addWord(words, verbDecoder, 200, "λύσασθαι", "to loose oneself-fMa",
+        "λαβέσθαι", "to take oneself-fMt");
+
+    addWord(words, verbDecoder, 200, "λυθήσεσθαι", "to be loosed-fPa",
+        "γραφῆναι", "to be written-fPt");
+
     return new WordSet(words);
   }
 
@@ -360,6 +430,25 @@ public class Greek extends Language {
     addWord(words, nounDecoder, 142, "σωμα", "body-n", "σωματος", "body-nG");
     addWord(words, null, 141, "παλιν", "again");
     addWord(words, verbDecoder, 140, "ζαω", "I live-Ar");
+    addWord(words, nounDecoder, 139, "φωνἠ", "sound, voice-f", "φωνῆς", "sound, voice-fG");
+    addWord(words, null, 135, "δύο", "two");
+    addWord(words, nounDecoder, 139, "ζωή", "life-f", "ζωῆς", "life-fG");
+    addWord(words, verbDecoder, 133, "βλέπω", "I throw-Ar",
+        "βλέψω", "I will throw βλέπω-Au", "ἐβλέψα", "I threw βλέπω-Aa");
+    addWord(words, verbDecoder, 132, "ἀποστέλλω", "I send-Ar", "ἀποστελῶ", "I will send ἀποστέλλω-Au",
+        "άπέστειλα", "I sent ἀποστέλλω-Aa", "ἀπέσταλκα", "I have sent ἀποστέλλω-Az",
+        "ἀπέσταλμαι", "I have been sent ἀποστέλλω-M/Pz", "ἀπεστάλην", "I was sent ἀποστέλλω-Pa");
+    addWord(words, null, 129, "ἀμήν", "truly");
+    addWord(words, nounDecoder, 128, "νεκρός", "dead-m", "νεκρά", "dead-f", "νεκρόν", "dead-n");
+    addWord(words, null, 128, "συν dative", "with");
+    addWord(words, nounDecoder, 124, "δοῦλος", "slave-m", "δοῦλου", "slave-mG");
+    addWord(words, null, 123, "ὅταν", "whenever");
+    addWord(words, nounDecoder, 122, "αἰών", "age-m", "αἰῶνος", "age-mG");
+    addWord(words, nounDecoder, 122, "ἀρχιερεύς", "high priest-m", "ἀρχιερέως", "high priest-mG");
+    addWord(words, verbDecoder, 122, "βάλλω", "I throw-Ar", "βαλῶ", "I will throw -Au",
+        "ἔβαλον", "I threw -Aa", "βέβληκα", "I have thrown -Az",
+        "βέβλημαι", "I have been thrown -M/Pz", "ἐβλήθην", "I was thrown -Pa");
+    addWord(words, nounDecoder, 120, "θάνατος", "death-m", "θάνατου", "death-mG");
     return new WordSet(words);
   }
 

@@ -83,8 +83,26 @@ public class Hebrew extends Language {
     addWord(words, verbDecoder, 647,  "מְשַׁמֵּר", "intensely guarding-Dams",
         "מְשַׁמֶּרֶת", "intensely guarding-Dafs", "מְשַׁמְּרִים", "intensely guarding-Daml",
         "מְשַׁמְּרוֹת", "intensely guarding-Dafl");
+    addWord(words, verbDecoder, 4163, "נִשְׁמַרְתִּי", "I was guarded-Np1s",
+        "נִשׁמַרְתָּ", "you were guarded-Np2ms", "נִשׁמַרְתְּ", "you were guarded-Np2fs",
+        "נִשׁמַר", "he was guarded-Np3ms", "נִשְׁמְרָה", "she was guarded-Np3fs",
+        "נִשְׁמַרְנוּ", "we were guarded-Np1l", "נִשְׁמַרְתֶּם", "you were guarded-Np2ml",
+        "נִשְׁמַרְתֶּן", "you were guarded-Np2fl", "נִשְׁמְרוּ", "they were guarded-Np3l");
+    addWord(words, verbDecoder, 4141, "אֶשָּׁמֵר", "I will be guarded-Ni1s",
+        "תִּשָּׁמֵר", "you/she will be guarded-Ni2m/3fs",
+        "תִּשָּׁמְרִי", "you will be guarded-Ni2fs",
+        "יִשָּׁמֵר", "he will be guarded-Nij3ms",
+        "נִשָּׁמֵר", "we will be guarded-Ni1l",
+        "תִּשָּׁמְרוּ", "you will be guarded-Ni2ml",
+        "תִּשָּׁמַרְנָה", "you/they will be guarded-Ni23fl",
+        "יִשָּׁמְרוּ", "they will be guarded-Ni3ml");
+    addWord(words, verbDecoder, 6, "הִשָּׁמֵר", "be guarded!/to be guarded-Nems/nC",
+        "הִשָּׁמְרִי", "be guarded!-Nefs", "הִשָּׁמְרוּ", "be guarded!-Neml",
+        "הִשָּׁמַרְנָה", "be guarded!-Nefl", "נִשְׁמֹר", "be guarded!-NnA");
+    addWord(words, verbDecoder, 6,  "נִשְׁמָר", "being guarded-Nams",
+        "נִשְׁמֶרֶת", "being guarded-Nafs", "נִשְׁמָרִים", "being guarded-Naml",
+        "נִשְׁמָרוֹת", "being guarded-Nafl");
         /*
-| Niphal    |  4163 |   5.7 |  4141 |   5.8 |
 | Pual      |   422 |   0.6 |   409 |   0.6 |
 | Hithpael  |   842 |   1.2 |   835 |   1.2 |
 | Hophal    |   396
@@ -288,6 +306,41 @@ public class Hebrew extends Language {
     addWord(words, nounDecoder, 252, "לֵב", "heart, mind-m", "לַבָב", "heart, mind-mp");
     addWord(words, nounDecoder, 252, "מַטֶּה", "tribe, staff-m", "מָטּוֹת", "tribe, staff-mp");
     addWord(words, nounDecoder, 251, "רֶגֶל", "foot-f", "רַגְלַיִם", "foot-fp");
+    addWord(words, null, 250, "מָלֵא", "he filled");
+    addWord(words, nounDecoder, 250, "אַמָּה", "cubit-f", "אַמּוֹת", "cubits-fp");
+    addWord(words, nounDecoder, 249, "חֶסֶד", "loving kindness, steadfast love-m", "חֲסָדִים",
+        "loving kindnesses, steadfast loves-mp");
+    addWord(words, nounDecoder, 245, "חַיַל", "strength, wealth, army-m", "חֲיָלִים",
+        "armies,strengths, wealths-mp");
+    addWord(words, nounDecoder, 241, "גְּבוּל", "border-m");
+    addWord(words, nounDecoder, 240, "נַעַר", "boy, youth-m", "נְעָרִים", "boys, youths-mp");
+    addWord(words, null, 239, "חָטָא", "he sinned, he missed");
+    addWord(words, nounDecoder, 237, "שָׁלוֹם", "peace, completeness-m");
+    addWord(words, nounDecoder, 236, "אֵל", "god-m");
+    addWord(words, nounDecoder, 235, "םַעֲשֶׂה", "work, deed-m", "מַעֲשִׂים", "works, deeds-mp");
+    addWord(words, nounDecoder, 233, "עָוֹן", "iniquity-m", "עֲוֹנוֹת", "iniquities-mp");
+    addWord(words, null, 232, "יָרַשׁ", "he inherited, he possessed, he dispossessed");
+    addWord(words, nounDecoder, 229, "זֶרַע", "seed-m");
+    addWord(words, nounDecoder, 227, "לַיְלָה", "night-m", "לֵילוֹת", "nights-mp");
+    addWord(words, nounDecoder, 227, "קֶרֶב", "midst, inward part-m");
+    addWord(words, null, 225, "בִּקֵּשׁ", "he sought");
+    addWord(words, null, 225, "זָכַר", "he remembered");
+    addWord(words, null, 225, "כָּתַב", "he wrote");
+    addWord(words, nounDecoder, 223, "מוֹעַד", "appointed time, place-m", "מוֹעֲדִים",
+        "appointed times, places-mp");
+    addWord(words, nounDecoder, 223, "תּוֹרָה", "law, instruction-f", "תּוֹרוֹת",
+        "laws, instructions-fp");
+    addWord(words, nounDecoder, 222, "נַחֲלָה", "possession-f", "נְחָלוֹת", "possessions-fp");
+    addWord(words, nounDecoder, 222, "אֲדָמָה", "land, ground, earth-f", "אֲדָמוֹת",
+        "lands, grounds-fp");
+    addWord(words, nounDecoder, 220, "אֵם", "mother-f");
+    addWord(words, null, 219, "נָכְוֹן", "he was firm, established, prepared");
+    addWord(words, null, 217, "אָהַב", "he loved");
+    addWord(words, null, 217, "שָׁתָה", "he drank");
+    addWord(words, null, 216, "נָטָה", "he stretched out");
+    addWord(words, nounDecoder, 216, "בֶּגֶד", "garmet-m", "בְּגָדִים", "garmets-mp");
+
+
     return new WordSet(words);
   }
 
