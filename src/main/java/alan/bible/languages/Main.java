@@ -30,7 +30,6 @@ public class Main {
           .withLongOpt("language")
           .withDescription("Language to test")
           .hasArgs()
-          .isRequired()
           .create('l'));
 
       options.addOption(OptionBuilder
@@ -90,6 +89,11 @@ public class Main {
           nouns = Integer.valueOf(cli.getOptionValue('o'));
         }
 
+        if (!cli.hasOption('l')) {
+          usage(options);
+          return;
+        }
+
         String[] languageNames = cli.getOptionValues('l');
         Language[] languages = new Language[languageNames.length];
         for (int i = 0; i < languageNames.length; i++) {
@@ -110,5 +114,10 @@ public class Main {
         System.err.println(e.getMessage());
         e.printStackTrace();
       }
+    }
+
+    private static void usage(Options options) {
+      HelpFormatter formatter = new HelpFormatter();
+      formatter.printHelp("langtest", options);
     }
 }
