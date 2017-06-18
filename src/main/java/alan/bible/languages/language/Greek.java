@@ -55,7 +55,7 @@ public class Greek extends Language {
         "λυσάσαις", "loosening-pAa-fDp", "λυσάσας", "loosening-pAa-fAp",
         "λῦσαν", "loosening-pAa-nNAs", "βαλών", "throwing-pAt-mNs",
         "βαλόντος", "throwing-pAt-mnGs", "βαλόντι", "throwing-pAt-mnDs",
-        "βαλόντα", "throwing-pAt-mAs", /* TODO expect this is neuter plural too */"βαλόντες", "throwing-pAt-mNp",
+        "βαλόντα", "throwing-pAt-mAs/nNAp", "βαλόντες", "throwing-pAt-mNp",
         "βαλόντων", "they must throw!/throwing-mAt3l/pAt-mnGp", "βαλοῦσι", "throwing-pAt-mnDp",
         "βαλοῦσιν", "throwing-pAt-mnDp", "βαλόντας", "throwing-pAt-mAp",
         "βαλοῦσα", "throwing-pAt-fNs", "βαλούσης", "throwing-pAt-fGs",
@@ -137,7 +137,6 @@ public class Greek extends Language {
         "λύωμεν", "we might be loosening-sAr1l",
         "λύητε", "you might be loosening-sAr2l", "λύωσι", "they might be loosening-sAr3l",
         "λύωσιν", "they might be loosening-sAr3l");
-    // TODO 370 participle perfect active
     addWord(words, verbDecoder, 280, "λυσάμενος", "loosening oneself-pMa-mNs",
         "λυσάμενον", "loosening oneself-pMa-mAs/nNAs",
         "λυσάμενου", "loosening oneself-pMa-mnGs",
@@ -156,12 +155,12 @@ public class Greek extends Language {
         "λυσάμενα", "loosening oneself-pMa-nNAp");
 
     // Below here I don't know the estimated occurrence, and the above are estimates only anyway
-    addWord(words, verbDecoder, 200, "λύωμαι", "I might loosen myself/be loosed-sPMr1n",
+    addWord(words, verbDecoder, 200, "λύωμαι", "I might loosen myself/be loosed-sMPr1n",
         // second person in indicative middle/passive present
-        "λύηται", "S/he might loosen her(him)self/be loosed-sPMr3n",
-        "λυώμεθα", "We might loosen ourselves/be loosed-sPMr1l",
-        "λύησθε", "You might loosen yourselves/be loosed-sPMr2l",
-        "λύωνται", "They might loosen themselves/be loosed-sPMr3l");
+        "λύηται", "S/he might loosen her(him)self/be loosed-sMPr3n",
+        "λυώμεθα", "We might loosen ourselves/be loosed-sMPr1l",
+        "λύησθε", "You might loosen yourselves/be loosed-sMPr2l",
+        "λύωνται", "They might loosen themselves/be loosed-sMPr3l");
 
     addWord(words, verbDecoder, 200, "λύσωμαι", "I might loosen myself-sMa1n",
         // second person in subjunctive active aorist
@@ -204,14 +203,14 @@ public class Greek extends Language {
         "γένεσθε", "become!-mMt2l",
         "γενέσθωσαν", "they must become!-mMt3l");
 
-    addWord(words, verbDecoder, 200, "λύθητι", "be loosed!-mMPa2n",
-        "λυθήτω", "s/he must be loosed!-mMPa3n",
-        "λύθητε", "be loosed!-mMPa2l",
-        "λυθήτωσαν", "they must be loosed!-mMPa3l",
-        "γράφητι", "be written!-mMPt2n",
-        "γραφήτω", "s/he must be written!-mMPt3n",
-        "γράφητε", "be written!-mMPt2l",
-        "γραφήτωσαν", "they must be written!-mMPt3l");
+    addWord(words, verbDecoder, 200, "λύθητι", "be loosed!-mPa2n",
+        "λυθήτω", "s/he must be loosed!-mPa3n",
+        "λύθητε", "be loosed!-mPa2l",
+        "λυθήτωσαν", "they must be loosed!-mPa3l",
+        "γράφητι", "be written!-mPt2n",
+        "γραφήτω", "s/he must be written!-mPt3n",
+        "γράφητε", "be written!-mPt2l",
+        "γραφήτωσαν", "they must be written!-mPt3l");
 
     addWord(words, verbDecoder, 200, "λύεσθαι", "to loose oneself/to be loosed-fMPr");
 
@@ -221,6 +220,37 @@ public class Greek extends Language {
     addWord(words, verbDecoder, 200, "λυθήσεσθαι", "to be loosed-fPa",
         "γραφῆναι", "to be written-fPt");
 
+    addWord(words, verbDecoder, 1184, "πορεύσομαι", "I will go-iMu1n",
+        "πορεύσῃ", "you will go-iMu2n", "πορεύσεται", "s/he will go-iMu3n",
+        "πορευσόμεθα", "we will go-iMu1l", "πορεύσεσθε", "you will go-iMu2l",
+        "πορεύσονται", "they will go-iMu3l");
+
+    // TODO indicative passive future
+    // TODO indicative middle perfect
+    // TODO indicative passive perfect
+    // TODO subjunctive active perfect
+    // TODO subjunctive middle perfect
+    // TODO subjunctive passive perfect
+    // TODO infinitive middle present
+    // TODO infinitive passive present
+    // TODO infinitive active future
+    // TODO infinitive middle future
+    // TODO infinitive passive future
+    // TODO infinitive active perfect
+    // TODO infinitive middle perfect
+    // No infinitive passive perfect
+    // TODO participle passive aorist
+    // TODO participle active perfect
+    // TODO participle middle perfect
+    // TODO participle passive perfect
+    // TODO optative active present
+    // TODO optative middle/passive present
+    // TODO optative active aorist
+    // TODO optative middle aorist
+    // TODO optative passive aorist
+    // TODO optative active future
+    // TODO optative middle future
+    // TODO optative passive future
     return new WordSet(words);
   }
 
@@ -433,8 +463,8 @@ public class Greek extends Language {
     addWord(words, nounDecoder, 139, "φωνἠ", "sound, voice-f", "φωνῆς", "sound, voice-fG");
     addWord(words, null, 135, "δύο", "two");
     addWord(words, nounDecoder, 139, "ζωή", "life-f", "ζωῆς", "life-fG");
-    addWord(words, verbDecoder, 133, "βλέπω", "I throw-Ar",
-        "βλέψω", "I will throw βλέπω-Au", "ἐβλέψα", "I threw βλέπω-Aa");
+    addWord(words, verbDecoder, 133, "βλέπω", "I see-Ar",
+        "βλέψω", "I will see βλέπω-Au", "ἐβλέψα", "I saw βλέπω-Aa");
     addWord(words, verbDecoder, 132, "ἀποστέλλω", "I send-Ar", "ἀποστελῶ", "I will send ἀποστέλλω-Au",
         "άπέστειλα", "I sent ἀποστέλλω-Aa", "ἀπέσταλκα", "I have sent ἀποστέλλω-Az",
         "ἀπέσταλμαι", "I have been sent ἀποστέλλω-M/Pz", "ἀπεστάλην", "I was sent ἀποστέλλω-Pa");
@@ -449,6 +479,49 @@ public class Greek extends Language {
         "ἔβαλον", "I threw -Aa", "βέβληκα", "I have thrown -Az",
         "βέβλημαι", "I have been thrown -M/Pz", "ἐβλήθην", "I was thrown -Pa");
     addWord(words, nounDecoder, 120, "θάνατος", "death-m", "θάνατου", "death-mG");
+    addWord(words, nounDecoder, 119, "δυναμις", "power, ability-f", "δυναμεως", "power, ability-fG");
+    addWord(words, verbDecoder, 119, "παραδιδωμι", "I hand over-Ar",
+        "παραδώσω", "I will hand over παραδιδωμι-Au",
+        "παρέδωκα", "I handed over παραδιδωμι-Aa",
+        "παραδέδωκα", "I have handed over παραδιδωμι-Az",
+        "παραδέδομαι", "I have been handed over παραδιδωμι-M/Pz",
+        "παρεδόθην", "I was handed over παραδιδωμι-Pa");
+    addWord(words, verbDecoder, 118, "μένω", "I remain-Ar",
+        "μενῶ", "I will remain μένω-Au",
+        "ἔμεινα", "I remained μένω-Aa",
+        "μεμένηκα", "I have remained μένω-Az");
+    addWord(words, verbDecoder, 117, "ἀπέρχομαι", "I depart, I go away-Ar",
+        "ἀπελεύσομαι", "I will depart ἀπέρχομαι-Au",
+        "ἀπῆλθον", "I departed ἀπέρχομαι-Aa",
+        "ἀπελήλθυα", "I have departed ἀπέρχομαι-Az");
+    addWord(words, verbDecoder, 117,
+        "ζητῶ", "I seek ζητεω-Ar",
+        "ζητήσω", "I will seek ζητεω-Au",
+        "ἐζήτησα", "I sought ζητεω-Aa",
+        "ἐζητήθην", "I was sought ζητεω-Pa");
+    addWord(words, nounDecoder, 116, "ἀγαπη", "love-f", "ἀγαπης", "love-fG");
+    addWord(words, nounDecoder, 115, "βασιλευς", "king-m", "βασιλεως", "king-mG");
+    addWord(words, nounDecoder, 114, "ἐκκλησια", "assembly, church-f", "ἐκκλησιας", "assembly, church-fG");
+    addWord(words, nounDecoder, 114, "ὀικος", "house-m", "ὀικου", "house-mG");
+    addWord(words, nounDecoder, 114,
+        "ἰδιος", "one's own-m",
+        "ἰδια", "one's own-f",
+        "ἰδιον", "one's own-n");
+    addWord(words, nounDecoder, 114,
+        "μονος", "alone-m",
+        "μονη", "alone-f",
+        "μονον", "alone-n");
+    addWord(words, verbDecoder, 114,
+        "κρίνω", "I judge-Ar",
+        "κρινῶ", "I will judge κρίνω-Au",
+        "ἔκρινα", "I judged κρίνω-Aa",
+        "κέκρικα", "I have judged κρίνω-Az",
+        "κέκριμαι", "I have been judged κρίνω-M/Pz",
+        "ἐκρίθην", "I was judged κρίνω-Pa");
+    addWord(words, verbDecoder, 111,
+        "ἀποθνῃσκω", "I die-Ar",
+        "ἀποθανοῦμαι", "I will die ἀποθνῃσκω-Au",
+        "άπέθανον", "I died ἀποθνῃσκω-Aa");
     return new WordSet(words);
   }
 

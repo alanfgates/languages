@@ -54,9 +54,12 @@ public class SpreadsheetDumper {
 private void dumpOneWordSet(WordSet words, int maxWordOccurrence, List<String> lines)
       throws IOException {
     for (Word word : words.getWords()) {
+      /*
       int timesToWrite = word.getOccurrences() / OCCURRENCE_SIZING_FACTOR;
       timesToWrite = Math.max(1, timesToWrite);
       timesToWrite = Math.min(maxWordOccurrence, timesToWrite);  // there's a limit
+      */
+      int timesToWrite = 1;
       for (int i = 0; i < timesToWrite; i++) {
         for (WordInstance instance : word.getInstances()) {
           lines.add(instance.first + '\t' + instance.second + '\n');
