@@ -7,9 +7,6 @@ import alan.bible.languages.WordSet;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Created by gates on 5/30/15.
- */
 public class Hebrew extends Language {
   @Override
   public String getName() {
@@ -339,6 +336,28 @@ public class Hebrew extends Language {
     addWord(words, null, 217, "שָׁתָה", "he drank");
     addWord(words, null, 216, "נָטָה", "he stretched out");
     addWord(words, nounDecoder, 216, "בֶּגֶד", "garmet-m", "בְּגָדִים", "garmets-mp");
+    addWord(words, null, 215, "יָסַף", "he added, he did again");
+    addWord(words, nounDecoder, 215, "מַחֲנֶה", "camp-m/f", "מַחַנוֹת", "camps-m/fp");
+    addWord(words, null, 214, "עָזַב", "he forsook, left");
+    addWord(words, null, 213, "הִצִּיל - נצל", "he saved, delivered");
+    addWord(words, null, 213, "שָׁכַב", "he layed down");
+    addWord(words, nounDecoder, 213, "בֹּקֶר", "morning-m", "בְּקָרִים", "mornings-mp");
+    addWord(words, nounDecoder, 213, "מַלְאָךּ", "messenger-m", "מַלְאָכִים", "messengers-mp");
+    addWord(words, nounDecoder, 211, "מִנְחָה", "gift, tribute, offering-f");
+    addWord(words, null, 208, "כָּלָה", "he completed");
+    addWord(words, nounDecoder, 206, "צַדּיק", "just, righteous-m", "צַדִּיקִים",
+        "just, righteous-mp");
+    addWord(words, null, 204, "שָׁפַת", "he judged");
+    addWord(words, nounDecoder, 202, "אֲרוֹן", "ark, chest-m");
+    addWord(words, null, 200, "אָסַף", "he gathered");
+    addWord(words, nounDecoder, 199, "כָּבוֹד", "abundance, honor, glory-m");
+    addWord(words, null, 195, "רוּם", "he was high, exalted");
+    addWord(words, nounDecoder, 195, "כַּף", "palm of the hand, sole of the foot-f", "כַּפוֹת",
+        "palms of the hands, soles of the feet-fp");
+    addWord(words, null, 194, "יָכוֹל", "he was able");
+    addWord(words, nounDecoder, 193, "שֶׁמֶן", "fat, oil-m", "שְמָנִים", "fat, oil-mp");
+    addWord(words, nounDecoder, 191, "חֲצֵרִים", "settlements, villages-mP");
+
 
 
     return new WordSet(words);

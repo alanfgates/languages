@@ -7,9 +7,6 @@ import alan.bible.languages.WordSet;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Created by gates on 5/22/15.
- */
 public class Greek extends Language {
   @Override
   public String getName() {
@@ -522,6 +519,99 @@ public class Greek extends Language {
         "ἀποθνῃσκω", "I die-Ar",
         "ἀποθανοῦμαι", "I will die ἀποθνῃσκω-Au",
         "άπέθανον", "I died ἀποθνῃσκω-Aa");
+    addWord(words, nounDecoder, 110,
+        "ὁσος", "as much, how much, as many-f",
+        "ὁσον", "as much, how much, as many-fG");
+    addWord(words, nounDecoder, 109,
+        "ἀληθεια", "truth-f",
+        "ἀληθειας", "truth-fG");
+    addWord(words, verbDecoder, 109,
+        "μελλω	I am about to, I intend",
+        "μελλήσω", "I will intend μελλω-u");
+    addWord(words, nounDecoder, 109,
+        "ὁλος", "whole, entire-",
+        "ὁλη", "whole, entire-f",
+        "ὁλον", "whole, entire-n");
+    addWord(words, verbDecoder, 109,
+        "παρακαλῶ", "I call, I beseech παρακαλέω-r",
+        "παρεκάλεσα", "I will beseech παρακαλέω-u",
+        "παρακέκλημαι", "I have been beseeched παρακαλέω-MPz",
+        "παρεκλήθην", "I was beseeched παρακαλέω-aP");
+    addWord(words, verbDecoder, 108,
+        "ἀνίστημι", "I raise, I stand up",
+        "ἀναστήσω", "I will raise/stand up ἀνίστημι-u",
+        "ἀνέστην", "I stood ἀνίστημι-aI",
+        "ἀνέστησα", "I raised ἀνίστημι-aT");
+    addWord(words, verbDecoder, 106,
+        "σῴζω", "I save",
+        "σώζω", "I will save σῴζω-u",
+        "ἔσωσα", "I saved σῴζω-a",
+        "σέσωκα", "I have saved σῴζω-z",
+        "σέσῳσμαι", "I have been saved σῴζω-MPz",
+        "ἐσώθην", "I was saved σῴζω-aP");
+    addWord(words, nounDecoder, 106,
+        "ὤρα", "the hour-f",
+        "ὤρας", "the hour-fG");
+    addWord(words, null, 105, "ἐκει", "there");
+    addWord(words, null, 103, "ὁτε", "when");
+    addWord(words, null, 103, "πως", "how");
+    addWord(words, nounDecoder, 103,
+        "ψυχη", "soul, life f",
+        "ψυχης", "soul, life-fG");
+    addWord(words, nounDecoder, 102,
+        "ἀγαθός", "good-m",
+        "ἀγαθή", "good-f",
+        "ἀγαθόν", "good-n");
+    addWord(words, nounDecoder, 102,
+        "ἐξουσια", "authority-f",
+        "ἐξουσιας", "authority-fG");
+    addWord(words, verbDecoder, 101,
+        "αἴρω", "I take up, I take away",
+        "ἀρω", "I will take up αἴρω-u",
+        "ἦρα", "I took up αἴρω-a",
+        "ἦρκα", "I have taken up αἴρω-z",
+        "ἦρμαι", "I have been taken up αἴρω-MPz",
+        "ἤρθην", "I was taken up αἴρω-aP");
+    addWord(words, null, 101, "δει", "it is necessary");
+    addWord(words, nounDecoder, 101,
+        "ὁδος", "way, road-f",
+        "ὁδου", "way, road-fG");
+    addWord(words, null, 100, "ἀλληλων", "each other");
+    addWord(words, nounDecoder, 100,
+        "καλος", "good-m",
+        "καλη", "good-f",
+        "καλον	good-n");
+    addWord(words, nounDecoder, 100,
+        "ὀφθαλμος", "eye, sight-m",
+        "ὀφθαλμου	eye, sight-mG");
+    addWord(words, verbDecoder, 100,
+        "τίθημι", "I put, I place",
+        "θήσω", "I will put τίθημι-u",
+        "ἔθηκα", "I placed τίθημι-a",
+        "τέθεικα", "I have put τίθημι-z",
+        "τέθειμαι", "I have been put τίθημι-MPz",
+        "ἐτέθην", "I was put τίθημι-a ");
+    addWord(words, nounDecoder, 98,
+        "φαρισαιος", "Pharisee-m",
+        "φαρισαιου", "Pharisee-mG");
+    addWord(words, nounDecoder, 97,
+        "ἀρτος", "bread-m",
+        "ἀρτου	bread-mG");
+    addWord(words, nounDecoder, 97,
+        "αἱμα", "blood-n",
+        "αἱματος	blood-nG");
+    addWord(words, verbDecoder, 97,
+        "διδασκω", "I teach",
+        "διδάξω", "I will teach διδασκω-u",
+        "ἐδίδαξα", "I taught διδασκω-a",
+        "ἐδιδάχθην", "I was taught διδασκω-a P");
+    addWord(words, verbDecoder, 97,
+        "γεννῶ", "I beget γενναω",
+        "γεννήσω", "I will beget γενναω-u",
+        "ἐγέννησα", "I begat γενναω-a",
+        "γεγέννηκα", "I have begotten γενναω-z",
+        "γεγέννημαι", "I have been begotten γενναω-MPz",
+        "ἐγεννήθην", "I was begotten γενναω-aP");
     return new WordSet(words);
   }
 
